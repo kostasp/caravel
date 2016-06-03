@@ -70,7 +70,7 @@ def load_energy():
         },
         index=False)
 
-    print("Creating table [wb_health_population] reference")
+    print("Creating table [energy_usage] reference")
     tbl = db.session.query(TBL).filter_by(table_name=tbl_name).first()
     if not tbl:
         tbl = TBL(table_name=tbl_name)
